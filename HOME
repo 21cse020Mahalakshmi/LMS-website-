@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <body>
+            <style>
+                .container{
+                    margin-left: 50px;
+                    
+                    
+                }
+                .top a:hover{
+                    color: black;
+                    background-color: aliceblue;
+                }
+                .top{
+                    border: 1px solid white;
+                    padding: 20px;
+                    
+                    box-shadow: 10px 20px 20px grey; 
+                }
+                .top i{
+                    color: #007f5f;
+                    font-size: 70px;
+                }
+                .nav{
+                    border: 1px solid red;
+                    display: inline;
+                    margin-left: 400px;
+                    padding: 10px;
+                    padding-top: 20px;
+                }
+                .roman{
+                    z-index: -1;
+                    border: 1px solid white;
+                    margin-top:20px ;
+                    width: 800px;
+                    height: 500px;
+                    box-shadow: 10px 20px 20px gray; 
+                }
+                .roman li{
+                    
+                    font-size: 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .roman h1{
+                    
+                    margin-left: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .pic{
+                   
+                    padding-left: 20px;
+                    padding-top: 18px;
+                    margin-top: 2px;
+                }
+                .pic img{
+                    
+                    box-shadow: 10px 20px 20px gray; 
+                }
+                .rko{
+                    display: flex;
+
+                }
+                .bts{
+                    box-shadow: 10px 20px 20px grey; 
+                    height: 550px;
+                    width: 1300px;
+                    margin-left: 40px;
+                    border: 1px solid white;
+                }
+                .bts h1 {
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .bts h2{
+                    
+                    padding-left: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .bts p{
+                    
+                    padding-left: 12px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .exo{
+                    border: 1px solid white;
+                    box-shadow: 10px 20px 20px grey; 
+                    height: 700px;
+                    width: 600px;
+                }
+                .kong{
+                    border: 1px solid white;
+                    height: 700px;
+                    width: 750px;
+                    margin-left: 30px;
+                    box-shadow: 10px 20px 20px grey; 
+                }
+                .kong h1{
+                    text-align: center;
+                    
+                    margin-top: 70px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .kong h2{
+                    padding-left: 12px;
+                    
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .kong p{
+                    padding-left: 12px;
+                    
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .king{
+                    display: flex;
+                }
+                .maha{
+                    box-shadow: 10px 20px 20px grey; 
+                    height: 780px;
+                    width: 400px;
+                    margin-left: 25px;
+                    
+                }
+                .maha a{
+                    color: #007f5f;;
+                    text-decoration: none;
+                    padding-left: 50px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .jeyashree{
+                    box-shadow: 10px 20px 20px grey; 
+                    height: 780px;
+                    width: 400px;
+                    margin-left: 45px;
+                }
+                .maha a:hover{
+                    color: black;
+                    font-size: 17px;
+                    transition: 1s;
+                }
+                .jeyashree a:hover{
+                    color: black;
+                    font-size: 17px;
+                    transition: 1s;
+                }
+                .harini a:hover{
+                    color: black;
+                    font-size: 17px;
+                    transition: 1s;
+                }
+                .jeyashree a:hover{
+                    color: black;
+                }
+                .harini a:hover{
+                    color: black;
+                }
+                .jeyashree a{
+                    color: #007f5f;;
+                    text-decoration: none;
+                    padding-left: 50px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .harini{
+                    box-shadow: 10px 20px 20px grey; 
+                    height: 780px;
+                    width: 400px;
+                    margin-left: 45px;
+                }
+                .harini a{
+                    color: #007f5f;
+                    text-decoration: none;
+                    padding-left: 50px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .trio{
+                    display: flex;
+                }
+                .trio h1{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                .trio h2{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    padding-left: 12px;
+                }
+                .footer{
+                    border: 1px solid #007f5f;;
+                    padding: 10px;
+                    font-size: 20px;
+                    box-shadow: 10px 20px 20px grey; 
+                }
+                /* link :hover{
+                    color: green;
+                    
+                } */
+                
+                .top a{
+                    margin-left: 220px;
+                    text-decoration: none;
+                    padding: 20px;
+                    border: 1px solid green;
+                    color: #007f5f;
+                    border-radius: 10px;
+                    background: transparent;
+                    font-size: 20px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                
+            </style>
+            
+            <div class="top" >
+                <i>LearnAcademy</i>
+                <a href="file:///C:/Users/jegan/Desktop/Maha.html/Sign%20In.html?email=&email=&upswd=&upswd=" >SIGN IN > To Explore More</a> 
+                <a href="file:///C:/Users/jegan/Desktop/Maha.html/course.html">COURSE ></a>
+                
+                
+            </div>
+            <div class="container"> 
+            <div class="rko">
+            <div class="roman">
+            <h1>Welcome To <i style="color: #007f5f;">LearnAcademy</i><br>Our Website Will Help You To Improve <br>Your Skills In Fullstack Web Development</h1>
+            <h1>By Providing Course's Like :</h1>
+            <ul>
+                <li>HTML,CSS</li>
+                <li>JavaScript,ReactJs,NodeJs,AngularJs</li>
+                <li>Django,Ruby,Laravel,PHP</li>
+                <li>Database Connectivity</li>
+            </ul>
+            <h1>Build You Career With <i style="color: #007f5f;">LearnAcademy</i></h1>
+            <center><h1 style="font-size: 50px; padding-right: 12px;">Happy Learning..!!</h1></center>
+            </div>
+            <div class="pic">
+                <img src="3.jpg" width="550px" height="500px">
+            </div>
+            </div><br><br>
+            <div class="bts">
+                <center><h1>Know The Basics :</h1><center>
+                <h2>what is FrontEnd?</h2>
+                <p>
+                    Front end development in web development refers to the part of a website or web application that users interact with directly. It encompasses the design, layout, and interactivity of a site, focusing on creating a visually appealing and intuitive user experience. Front end developers use a combination of languages such as HTML, CSS, and JavaScript to build the structure, style, and functionality of web pages. HTML provides the basic structure of a page, CSS is used for styling and layout, and JavaScript adds interactivity and dynamic features. Additionally, front end developers often utilize frameworks and libraries like React, Angular, or Vue.js to streamline development and enhance user interfaces. The goal of front end development is to create responsive, accessible, and engaging web experiences that effectively communicate information and facilitate user interaction.</p>
+                <h2>what is BackEnd?</h2>
+                <p>Backend development in web development refers to the server-side of a website or web application. It involves managing data, processing requests, and ensuring the smooth functioning of the application's logic. Backend developers use programming languages like Python, Ruby, Java, PHP, or Node.js, along with frameworks like Django, Ruby on Rails, Spring Boot, Laravel, or Express.js to handle these tasks efficiently. They are responsible for implementing security measures, managing user authentication, and ensuring overall performance and scalability.</p>
+                <h2>what is DataBase?</h2>
+                <p>
+                    Database development involves managing data within a web application. Developers work with systems like MySQL, PostgreSQL, or MongoDB to design schemas, create tables, and optimize queries. They ensure data integrity and collaborate with backend developers to integrate database functionality seamlessly.</p>
+            </div><br><br>
+            <div class="king">
+            <div class="exo">
+                <img src="5.jpg" height="700px" width="600px">
+            </div>
+            <div class="kong">
+                <h1>The Program Details</h1>
+                <h2>Front-End Development</h2>
+                <p>Get a deeper understanding of Client Side Programming or in other words the front end development by developing highly responsive web pages across languages.</p>
+                <h2>Back-End Development</h2>
+                <p>Learn the industry leading ways to design back end development with least response time, which in turn helps in the fast loading of web applications. You’ll learn to connect databases with servers.</p>
+                <h2>DataStructures And Scalability</h2>
+                <p>Learn Data Structures & Algorithms to write an efficient, robust, & optimized code. Learn how to build robust & scalable web servers with a thorough understanding of AWS.</p>
+                <h2>Build your Portfolio</h2>
+                <p>Build your Full stack developer Portfolio and demonstrate your knowledge by developing an end-to-end Full-stack Application.</p>
+            </div>
+            </div><br><br>
+            <center><h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-shadow: 10px 20px 30px grey; font-size: 50px;">Top Instructor</h1></center>
+            <div class="trio">
+                <div class="maha">
+                    <img src="62.jpg" height="600px" width="400px">
+                    <h1>MahaLakshmi S</h1>
+                    <h2>Full Stack Developer</h2>
+                    <a href="mahalakshmi21cse020@gmail.com">Email</a>
+                    <a href="#">Insta</a>
+                    <a href="#">FaceBook</a>
+                    
+                </div>
+                <div class="jeyashree">
+                    <img src="6.jpg" height="600px" width="400px">
+                    <h1>Jeya Sree D</h1>
+                    <h2>Web Developer Consultant</h2>
+                    <a href="21cse013jeyasree.d@gmail.com">Email</a>
+                    <a href="#">Insta</a>
+                    <a href="#">FaceBook</a>
+                </div>
+                <div class="harini">
+                    <img src="60.jpg" height="600px" width="400px">
+                    <h1>Harineewari K</h1>
+                    <h2>Backend Developer</h2>
+                    <a href="21cse007kharineeswari@gmail.com">Email</a>
+                    <a href="#">Insta</a>
+                    <a href="#">FaceBook</a>
+                </div>
+            </div>
+
+        </div><br><br>
+        <div class="footer">
+            
+        <footer>
+           <center><p> OWEND BY <I style="color: #007f5f;">LearnAcademy</I>      Contact : 9441981289 </p></center>
+           
+        </footer>
+        </div>
+        </body>
+    </head>
+</html>
