@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <body>
+            <style>
+                .god{
+                    height: 700px;
+                    
+                    width: 1000px;
+                    display: flex;
+                    margin-left: 250px;
+                    margin-top: 90px;
+                    box-shadow: 10px 20px 20px grey; 
+
+                }
+                .deadpool{
+                    
+                    width: 500px;
+                    position: relative;
+                }
+                .untouch{
+                    border: 1px solid white;
+                    width: 500px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                /* .deadpool img{
+                    opacity: 0.7;
+                    z-index: -1;
+                } */
+                .rock a{
+                    
+                    margin-left: 130px;
+                    margin-top: 200px;
+                    padding: 20px;
+                    padding-top: 30px;
+                }
+                .untouch input{
+                    padding: 30px;
+                    width: 400px;
+                    margin-left: 20px;
+                    margin-left: 20px;
+
+                }
+                .untouch ::placeholder{
+                    
+                    font-size: 20px;
+                   
+                }
+                .untouch button{
+                    padding: 20px;
+                    border-radius:10px ;
+                    border: 1px solid green;
+                    color: #007f5f;
+                    font-size: 20px;
+                    background: transparent;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                }
+                .untouch button :hover{
+                     background-color: aliceblue;;
+                }
+                .rock{
+                    position:absolute;
+                }
+                /* .untouch form{
+                    border: 1px solid red;
+                } */
+                .star a{
+                    border-radius: 10px;
+                    padding: 12px;
+                    text-decoration: none;
+                }
+                .star :hover{
+                    font-size: 18px;
+                }
+            </style>
+            <div class="god">
+                <div class="deadpool">   
+                    <img src="13.jpg" height="700px" width="500px">
+                    
+                </div>
+                <div class="rock">
+                    <i style="font-size: 80px; color: #007f5f;">LearnAcademy</i>
+                </div>
+                <div class="untouch">
+                        <form name="myform" id="myform" onclick="zfun()" action="login.php" method="POST">
+                            <br><br><br><br><br>
+                            <center><h1>LOGIN</h1><center>
+                            <input type="text" name="email" placeholder="Email or phone number" required="">
+                            <br><br>
+                            <input type="password" name="upswd" placeholder="Password" required="">
+                            <br><br>
+                            <p>Didn't Have An Account ?<a href="file:///C:/Users/jegan/Desktop/Maha.html/Sign%20In.html?email=&email=&upswd=&upswd=" style="text-decoration: none;">SIGN IN</a></p>
+                            <button>Login > </button>
+                        </form><br><br>
+                        <div id="errorBox"></div>
+                        
+                </div>
+            </div>
+            <script>
+                function zfun() {
+                    var email = document.getElementById("myform").elements.namedItem("email").value;
+                    var upswd = document.getElementById("myform").elements.namedItem("upswd").value;
+                    if (upswd == "" || email == "") { 
+                        document.getElementById('errorBox').innerHTML = "PLEASE ENTER ALL THE REQURIED"; 
+                        return false; 
+                    } else if (email != '' && upswd != '') {
+                        document.getElementById('errorBox').innerHTML = ""; 
+                        alert("Login successful");
+                    } else {
+                        alert("Sorry"); 
+                    }
+                }
+            </script>
+        
+        </body>
+    </head>
+</html>
