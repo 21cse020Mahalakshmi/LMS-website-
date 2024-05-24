@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Development</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1, h2 {
+        color: #28a745; /* Green */
+    }
+
+    video {
+        max-width: 45%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quiz {
+        max-width: 45%;
+    }
+
+    .score {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+<header>
+<h1>FrontEnd Development</h1>
+</header>
+<section class="content">
+<p>Frontend development focuses on creating the user interface and experience of a web application. It involves using technologies like HTML, CSS, and JavaScript to design and build the visible parts of the application that users interact with.</p>
+<h2>Roadmap to Frontend Development</h2>
+<ul>
+<li>Learn HTML: HTML (Hypertext Markup Language) is the standard markup language for creating web pages and web applications. It provides the structure and content of a webpage.</li>
+<li>Master CSS: CSS (Cascading Style Sheets) is used to style HTML elements and define their appearance, layout, and design. It controls the presentation of the content on a webpage.</li>
+<li>Learn JavaScript: JavaScript is a programming language that enables dynamic interactivity on web pages. It is used to add behavior and functionality to web applications, such as user interactions and data manipulation.</li>
+<li>Understand databases and how to use them in your applications.</li>
+<li>Master a Frontend Framework: Frontend frameworks like React, Angular, or Vue.js provide tools and libraries to streamline the development of complex user interfaces. They offer reusable components, state management, and other features to enhance productivity.</li>
+</ul>
+<video controls width="400" height="300">
+<source src="intro1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="quiz">
+<h2>Quiz</h2>
+<p>Test your knowledge of full stack development!</p>
+<form id="quizForm">
+<label for="q1">Which tool is commonly used for managing dependencies and building frontend projects?</label><br>
+<input type="radio" name="q1" value="a"> npm<br>
+<input type="radio" name="q1" value="b"> pip<br>
+<input type="radio" name="q1" value="c"> Maven<br>
+<input type="radio" name="q1" value="d"> Gradle<br><br>
+
+<label for="q2">Which of the following is used to add interactivity to web pages in frontend development?</label><br>
+<input type="radio" name="q2" value="a"> HTML<br>
+<input type="radio" name="q2" value="b"> CSS<br>
+<input type="radio" name="q2" value="c"> JAVA<br>
+<input type="radio" name="q2" value="d"> JAVASCRIPT<br><br>
+
+<label for="q3">What is the purpose of JavaScript in frontend development?</label><br>
+<input type="radio" name="q3" value="a">To define the structure of a webpage<br>
+<input type="radio" name="q3" value="b"> To style HTML elements<br>
+<input type="radio" name="q3" value="c">To add dynamic behavior and interactivity<br>
+<input type="radio" name="q3" value="d"> To manage server-side logic<br><br>
+
+<input type="button" value="Submit" onclick="calculateScore()">
+</form>
+<p class="score" id="scoreMessage"></p>
+</div>
+</section>
+<p>To know more about Full stack development refer the following link:</p>
+<a href="https://www.w3schools.com/whatis/whatis_frontenddev.asp">CLICK HERE!!</a>
+
+<script>
+function calculateScore() {
+    let score = 0;
+    const quizForm = document.getElementById("quizForm");
+    const answers = quizForm.elements;
+    
+    // Check answers and calculate score
+    if (answers["q1"].value === "c") {
+        score++;
+    }
+    if (answers["q2"].value === "b") {
+        score++;
+    }
+    if (answers["q3"].value === "c") {
+        score++;
+    }
+    
+    // Display score to user
+    const scoreMessage = document.getElementById("scoreMessage");
+    scoreMessage.textContent = "Your score is: " + score + "/3";
+    scoreMessage.style.display = "block";
+}
+</script>
+</body>
+</html>
