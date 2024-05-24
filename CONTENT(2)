@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Development</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1, h2 {
+        color: #28a745; /* Green */
+    }
+
+    video {
+        max-width: 45%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quiz {
+        max-width: 45%;
+    }
+
+    .score {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+<header>
+<h1>Database Management System (DBMS)</h1>
+</header>
+<section class="content">
+<p>Backend development involves working on the server-side portion of a web application. It focuses on managing data, handling requests, and performing operations that enable the frontend to function properly.</p>
+<h2>Roadmap to Database Management System (DBMS)</h2>
+<ul>
+<li>Learn about database fundamentals: Understand the basic concepts of databases, including data models, relational databases, non-relational databases, normalization, and indexing. Familiarize yourself with terminology such as tables, rows, columns, and relationships.</li>
+<li>Study SQL (Structured Query Language): SQL is the standard language used to interact with relational databases. Learn SQL syntax, data manipulation (CRUD operations), data definition (DDL) statements, data querying (SELECT statements), joins, and aggregation functions.</li>
+<li>Explore relational database systems: Gain experience with popular relational database management systems (RDBMS) such as MySQL, PostgreSQL, SQL Server, and Oracle. Understand their features, installation, configuration, and administration.</li>
+<li>Learn NoSQL databases: NoSQL databases offer alternatives to traditional relational databases and are suitable for handling large volumes of unstructured or semi-structured data. Explore various types of NoSQL databases, including document-oriented, key-value, column-family, and graph databases.</li>
+<li>Understand database design and optimization: Learn principles of database design, including entity-relationship modeling, normalization, denormalization, and database indexing. Explore techniques for optimizing database performance, such as query optimization, indexing strategies, and caching.</li>
+</ul>
+<video controls width="400" height="300">
+<source src="intro3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="quiz">
+<h2>Quiz</h2>
+<p>Test your knowledge of full stack development!</p>
+<form id="quizForm">
+<label for="q1">Which of the following is an example of a relational database management system (RDBMS)?</label><br>
+<input type="radio" name="q1" value="a"> Cassandra<br>
+<input type="radio" name="q1" value="b"> MongoDB<br>
+<input type="radio" name="q1" value="c">  PostgreSQL<br>
+<input type="radio" name="q1" value="d">  Redis<br><br>
+
+<label for="q2">Which type of database is suitable for handling unstructured or semi-structured data?</label><br>
+<input type="radio" name="q2" value="a"> Relational database<br>
+<input type="radio" name="q2" value="b">  Document-oriented database<br>
+<input type="radio" name="q2" value="c"> Key-value store database<br>
+<input type="radio" name="q2" value="d"> Column-family database<br><br>
+
+<label for="q3">What is the primary purpose of a Database Management System (DBMS)?</label><br>
+<input type="radio" name="q3" value="a"> Frontend development<br>
+<input type="radio" name="q3" value="b"> Backend development<br>
+<input type="radio" name="q3" value="c"> Data storage, management, and retrieval<br>
+<input type="radio" name="q3" value="d"> Defining frontend architecture<br><br>
+
+<input type="button" value="Submit" onclick="calculateScore()">
+</form>
+<p class="score" id="scoreMessage"></p>
+</div>
+</section>
+<p>To know more about Full stack development refer the following link:</p>
+<a href="https://www.geeksforgeeks.org/development-phases-of-database-system/">CLICK HERE!!</a>
+
+<script>
+function calculateScore() {
+    let score = 0;
+    const quizForm = document.getElementById("quizForm");
+    const answers = quizForm.elements;
+    
+    // Check answers and calculate score
+    if (answers["q1"].value === "c") {
+        score++;
+    }
+    if (answers["q2"].value === "b") {
+        score++;
+    }
+    if (answers["q3"].value === "c") {
+        score++;
+    }
+    
+    // Display score to user
+    const scoreMessage = document.getElementById("scoreMessage");
+    scoreMessage.textContent = "Your score is: " + score + "/3";
+    scoreMessage.style.display = "block";
+}
+</script>
+</body>
+</html>
