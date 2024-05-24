@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Development</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1, h2 {
+        color: #28a745; /* Green */
+    }
+
+    video {
+        max-width: 45%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quiz {
+        max-width: 45%;
+    }
+
+    .score {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    .gun{
+        border: 1px solid black;
+        /* box-shadow: 10px 20px 20px grey;  */
+        padding-left: 30px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    .gun ul{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+<header>
+<h1>Full Stack Development</h1>
+</header>
+<section class="content">
+<p>Full stack development refers to the development of both the front end (client-side) and back end (server-side) portions of a web application. It involves working with various technologies and languages to create a complete, functional application.</p>
+<h2>Roadmap to Full Stack Development</h2>
+<ul>
+<li>Learn HTML, CSS, and JavaScript for front end development.</li>
+<li>Master a front end framework like React, Angular, or Vue.js.</li>
+<li>Learn a back end language like Node.js, Python, or Java.</li>
+<li>Understand databases and how to use them in your applications.</li>
+<li>Learn about deployment and server management.</li>
+</ul>
+<video controls width="400" height="300">
+<source src="intro.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="quiz">
+<h2>Quiz</h2>
+<p>Test your knowledge of full stack development!</p>
+<form id="quizForm">
+<label for="q1">What does full stack development involve?</label><br>
+<input type="radio" name="q1" value="a"> Only front end development<br>
+<input type="radio" name="q1" value="b"> Only back end development<br>
+<input type="radio" name="q1" value="c"> Both front end and back end development<br>
+<input type="radio" name="q1" value="d"> None of the above<br><br>
+
+<label for="q2">Which of the following is a front end framework?</label><br>
+<input type="radio" name="q2" value="a"> Node.js<br>
+<input type="radio" name="q2" value="b"> React<br>
+<input type="radio" name="q2" value="c"> Python<br>
+<input type="radio" name="q2" value="d"> SQL<br><br>
+
+<label for="q3">What is a back end language used in full stack development?</label><br>
+<input type="radio" name="q3" value="a"> HTML<br>
+<input type="radio" name="q3" value="b"> CSS<br>
+<input type="radio" name="q3" value="c"> Java<br>
+<input type="radio" name="q3" value="d"> JavaScript<br><br>
+
+<input type="button" value="Submit" onclick="calculateScore()">
+</form>
+<p class="score" id="scoreMessage"></p>
+</div>
+</section>
+<p>To know more about Full stack development refer the following link:</p>
+<a href="https://www.mongodb.com/languages/full-stack-development">CLICK HERE!!</a>
+<div class="gun">
+<h1>EXPLORE DEPPER</h1>
+<ul>
+    <li><a href="frontend.html">FrontEnd</li>
+    <li><a href="backend.html">BackEnd</li>
+    <li><a href="DBMS.html">DBMS</li>
+</ul>
+</div>
+
+<script>
+function calculateScore() {
+    let score = 0;
+    const quizForm = document.getElementById("quizForm");
+    const answers = quizForm.elements;
+    
+    // Check answers and calculate score
+    if (answers["q1"].value === "c") {
+        score++;
+    }
+    if (answers["q2"].value === "b") {
+        score++;
+    }
+    if (answers["q3"].value === "c") {
+        score++;
+    }
+    
+    // Display score to user
+    const scoreMessage = document.getElementById("scoreMessage");
+    scoreMessage.textContent = "Your score is: " + score + "/3";
+    scoreMessage.style.display = "block";
+}
+</script>
+</body>
+</html>
