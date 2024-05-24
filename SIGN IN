@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <body>
+            <style>
+                .god{
+                    height: 700px;
+                    
+                    width: 1000px;
+                    display: flex;
+                    margin-left: 250px;
+                    margin-top: 90px;
+                    box-shadow: 10px 20px 20px grey; 
+
+                }
+                .deadpool{
+                    
+                    width: 500px;
+                    position: relative;
+                }
+                .untouch{
+                    border: 1px solid white;
+                    width: 500px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                }
+                /* .deadpool img{
+                    opacity: 0.7;
+                    z-index: -1;
+                } */
+                .rock{
+                    position:absolute;
+                }
+                /* .rock a{
+                    
+                    margin-left: 130px;
+                    margin-top: 200px;
+                    padding: 20px;
+                    padding-top: 30px;
+                } */
+                .untouch input{
+                    padding: 30px;
+                    width: 400px;
+                    margin-left: 20px;
+                    margin-left: 20px;
+
+                }
+                .untouch ::placeholder{
+                    
+                    font-size: 20px;
+                   
+                }
+                .untouch button{
+                    padding: 20px;
+                    border-radius:10px ;
+                    border: 1px solid green;
+                    color: #007f5f;
+                    font-size: 20px;
+                    background: transparent;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+                }
+                .untouch button :hover{
+                     background-color: aliceblue;;
+                }
+                /* .untouch form{
+                    border: 1px solid red;
+                } */
+                .star a{
+                    border-radius: 10px;
+                    padding: 12px;
+                    text-decoration: none;
+                }
+                .star :hover{
+                    font-size: 18px;
+                }
+            </style>
+            <div class="god">
+                <div class="deadpool">   
+                    <img src="12.jpg" height="700px" width="500px">
+                </div>
+                <div class="rock">
+                    <i style="font-size: 80px; color: #007f5f;">LearnAcademy</i>
+                </div>
+                <div class="untouch">
+                    <form name="myform" id="myform" onsubmit="zfun()" action="signin.php" method="POST">
+                        <center><h1>SIGN IN</h1><center>
+                        <input type="text" name="user" placeholder="User Name" required="">
+                        <br><br>
+                        <input type="text" name="email" placeholder="Email or phone number" required="">
+                        <br><br>
+                        <input type="password" name="upswd" placeholder="Password" required="">
+                        <br><br>
+                        <input type="password" name="upswdc" placeholder="Conform Password" required="">
+                        <br>
+                        <p>Already Have An Account ?<a href="file:///C:/Users/jegan/Desktop/Maha.html/logink.html" style="text-decoration: none;"> LOGIN</a></p>
+                        <button type="submit">Sign-in > </button>
+                        <div id="errorBox"></div>
+                    </form><br><br>
+                    <div class="star">
+                        <a href="#" style="border: 1px solid ; color: white; background: black;">Sign In With Google</a>
+                        <a href="#" style="border: 1px solid rgb(236, 10, 8); color: white; background:rgb(236, 10, 48) ;">Sign In With Instagram</a><br><br><br>
+                        <a href="#" style="border: 1px solid; color: white; background: blue;">Sign In With FaceBook</a>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function zfun() {
+                    var email = document.getElementById("myform").elements.namedItem("email").value;
+                    var upswd = document.getElementById("myform").elements.namedItem("upswd").value;
+                    var user = document.getElementById("myform").elements.namedItem("user").value;
+                    var upswdc = document.getElementById("myform").elements.namedItem("upswdc").value;
+                    
+                    if (upswd != upswdc) {
+                        document.getElementById('errorBox').innerHTML = "PASSWORDS DON'T MATCH"; 
+                        return false; 
+                    } else if (upswd == "" || upswdc == "") { 
+                        document.getElementById('errorBox').innerHTML = "PLEASE ENTER PASSWORDS"; 
+                        return false; 
+                    } else if (email != '' && upswd != '' && upswdc != '' && user != '') {
+                        document.getElementById('errorBox').innerHTML = ""; 
+                        alert("signin successful");
+                    } else {
+                        alert("Sorry"); 
+                    }
+                }
+            </script>
+        </body>
+    </head>
+</html>
