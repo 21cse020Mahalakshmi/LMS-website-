@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Stack Development</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    h1, h2 {
+        color: #28a745; /* Green */
+    }
+
+    video {
+        max-width: 45%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .quiz {
+        max-width: 45%;
+    }
+
+    .score {
+        display: none;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+</style>
+</head>
+<body>
+<header>
+<h1>Backend Development</h1>
+</header>
+<section class="content">
+<p>Backend development involves working on the server-side portion of a web application. It focuses on managing data, handling requests, and performing operations that enable the frontend to function properly.</p>
+<h2>Roadmap to Backend Development</h2>
+<ul>
+<li>Learn a backend language: Backend languages like Node.js, Python, or Java are used to handle server-side logic and data processing. These languages are essential for building the core functionality of web applications.</li>
+<li>Understand databases: Databases are used to store and manage data in web applications. Learn about database management systems like MySQL, PostgreSQL, MongoDB, or SQLite, and understand how to interact with databases using queries and commands</li>
+<li>Master a backend framework: Backend frameworks provide tools and libraries to streamline the development of server-side code. Examples include Express.js for Node.js, Django or Flask for Python, and Spring Boot for Java. Mastering a backend framework can significantly boost productivity and efficiency.</li>
+<li>Understand databases and how to use them in your applications.</li>
+<li>Learn about deployment and server management: Understanding how to deploy web applications to servers and manage them effectively is crucial for backend development. Learn about server configuration, deployment pipelines, monitoring, and scalability to ensure the smooth operation of web applications in production environments.</li>
+</ul>
+<video controls width="400" height="300">
+<source src="intro2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<div class="quiz">
+<h2>Quiz</h2>
+<p>Test your knowledge of full stack development!</p>
+<form id="quizForm">
+<label for="q1">Which of the following is NOT a backend framework?</label><br>
+<input type="radio" name="q1" value="a"> Express.js<br>
+<input type="radio" name="q1" value="b"> Django<br>
+<input type="radio" name="q1" value="c"> Flask<br>
+<input type="radio" name="q1" value="d"> React<br><br>
+
+<label for="q2">What is a primary purpose of databases in backend development?</label><br>
+<input type="radio" name="q2" value="a"> Managing user interface<br>
+<input type="radio" name="q2" value="b"> Handling server-side logic<br>
+<input type="radio" name="q2" value="c"> Storing and managing data<br>
+<input type="radio" name="q2" value="d"> Storing and managing data<br><br>
+
+<label for="q3">What is the role of server management in backend development?</label><br>
+<input type="radio" name="q3" value="a"> Styling HTML elements<br>
+<input type="radio" name="q3" value="b"> Handling client-side interactions<br>
+<input type="radio" name="q3" value="c"> Java<br>
+<input type="radio" name="q3" value="d"> Defining frontend architecture<br><br>
+
+<input type="button" value="Submit" onclick="calculateScore()">
+</form>
+<p class="score" id="scoreMessage"></p>
+</div>
+</section>
+<p>To know more about Full stack development refer the following link:</p>
+<a href="https://www.geeksforgeeks.org/backend-development/">CLICK HERE!!</a>
+
+<script>
+function calculateScore() {
+    let score = 0;
+    const quizForm = document.getElementById("quizForm");
+    const answers = quizForm.elements;
+    
+    // Check answers and calculate score
+    if (answers["q1"].value === "c") {
+        score++;
+    }
+    if (answers["q2"].value === "b") {
+        score++;
+    }
+    if (answers["q3"].value === "c") {
+        score++;
+    }
+    
+    // Display score to user
+    const scoreMessage = document.getElementById("scoreMessage");
+    scoreMessage.textContent = "Your score is: " + score + "/3";
+    scoreMessage.style.display = "block";
+}
+</script>
+</body>
+</html>
